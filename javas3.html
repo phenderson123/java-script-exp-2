@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>javas exp</title>
+	<script>
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+ 
+  var e = document.getElementById("go");
+  
+  
+  e.addEventListener("click", function() {
+    
+    var redirectURL = document.getElementById("url").value;
+    var redirectDelay = document.getElementById("delay").value;
+    
+    
+    window.setTimeout(function(){
+        location.href = redirectURL;
+    }, redirectDelay);    
+    
+  }, false);
+  
+});
+</script>
+
+
+<form name="myForm" action="{action page}">
+  <input name="url" id="url" value="">
+  <input name="delay" id="delay" type="number" value="1200">
+  <input name="go" id="go" type="button" value="Go">
+</form>
+</head>
+<body>
+
+</body>
+</html>
